@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+	<JobFolder>[path to where you place your powershell scripts\ChocoUpgrade]</JobFolder>
+	<JobName>ChocoUpgrade</JobName>
+	<LogFolder>[path to where you place your powershell scripts\Logs]</LogFolder>
+	<Processes>
+		<ProcessName>[process name to stop with wildcards if required]</ProcessName>
+	</Processes>
+	<Services>
+		<ServiceName>[service name to stop]</ServiceName>
+	</Services>
+	<PackageHandler>C:\ProgramData\chocolatey\bin\choco.exe</PackageHandler>
+	<ServiceHandler>C:\ProgramData\chocolatey\bin\nssm.exe</ServiceHandler>
+</Configuration>

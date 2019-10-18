@@ -1,0 +1,85 @@
+CleanupLogs Changelog
+=====================
+
+
+Release 1.1
+===========
+1. Complete changes to code and files
+2. Start Git Bash
+3. Use the following commands:
+	cd /d/ServerFolders/Company/Scripts/CleanupLogs
+	git status
+	git add "CleanupLogs.ps1"
+	git commit -m "Updated error logic"
+	git tag 1.1 [commit id]
+	git push origin development
+	git log
+4. Access the following web page:
+	https://github.com/instantdreams/CleanupLogs/pulls
+5. Select "Compare & pull request" from branch "development"
+6. Confirm base: master < compare: development can be automatically merged
+7. Click "Create pull request"
+8. Enter the following:
+	Title:			[leave as commit message]
+	Description:	Updated error logic
+9. Set the following properties:
+	Assignee:		Yourself
+	Lables:			enhancement
+	Projects:		Long Term Development
+10. Select  "Merge pull request"
+11. Review any issues
+12. Click "Confirm merge"
+13. Add comment "Change reviewed and approved" and click "Comment"
+
+
+Create local branch development 
+===============================
+1. Start Git Bash
+2. Use the following commands:
+	cd /d/ServerFolders/Company/Scripts/CleanupLogs
+	git status
+	git log
+	git branch
+	git checkout -b development
+
+
+Create Long Term Development Project
+====================================
+1. Access the following web page:
+	https://github.com/instantdreams/CleanupLogs/projects
+2. Select "Create a project"
+3. Enter the following details:
+	Project board name:	Long Term Development
+	Description:		Used to capture any long term development plans and requests
+	Project template:	Automated kanban with reviews
+4. Select "Create project"
+5. Delete automatically created notes under "To do"
+
+
+Create Development Branch
+=========================
+1. Access the following web page:
+	https://github.com/instantdreams/CleanupLogs
+2. Select "Manage topics" and add "powershell" and "powershell-script" then select Done
+3. Select "Branch: master" and enter "development" then select "Create branch: development"
+
+
+Create Repositories and add Release 1.0
+=======================================
+1. Access the following web page:
+	https://github.com/new
+2. Enter the following details:
+	Project name:	CleanupLogs
+	Description:	Remove log entries older than retention date
+	Type:			Public
+3. Select "Create repository"
+4. Start Git Bash
+5. Use the following commands:
+	cd /d/ServerFolders/Company/Scripts/CleanupLogs
+	git init
+	git add .
+	git commit -m "Initial commit"
+	git tag 1.0 dab3e3e
+	git remote add origin https://github.com/instantdreams/CleanupLogs.git
+	git remote -v
+	git push origin master
